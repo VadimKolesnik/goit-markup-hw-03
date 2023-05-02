@@ -22,7 +22,28 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* Header styles */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .header-list {
   list-style: none;
@@ -273,9 +294,12 @@ body {
 /* Footer styles */
 .page-footer {
   background: var(--overlays-color);
+  padding-top: 100px;
 }
 .logo link {
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-footer {
   color: var(--color-cloud);
@@ -310,4 +334,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+  max-width: 264px;
 }
