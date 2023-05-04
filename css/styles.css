@@ -22,6 +22,11 @@ body {
   background-color: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -31,7 +36,15 @@ body {
 
 /* Header styles */
 
-.visually-hidden {
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -43,14 +56,26 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .header-list {
   list-style: none;
+  display: flex;
+  gap: 40px;
 }
-.address-list {
+.header-nav-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 40px;
+}
+.contact-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 40px;
+}
+/* .address-list {
   list-style: none;
-}
+} */
 .link {
   text-decoration: none;
 }
@@ -66,7 +91,9 @@ body {
 }
 
 .address .address-list {
+  list-style: none;
   color: var(--overlays-color);
+  display: flex;
 }
 
 .address {
@@ -100,6 +127,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--ctas-links-color);
+  margin-right: 76px;
 }
 
 .header-menu-link {
@@ -111,8 +139,11 @@ body {
   letter-spacing: 0.02em;
   color: var(--overlays-color);
 }
-.menu-nav-list {
+.menu-nav {
   list-style: none;
+  display: flex;
+  margin-right: auto;
+  align-items: center;
 }
 .header-menu-link {
   text-decoration: none;
@@ -121,6 +152,8 @@ body {
 
 .main-section {
   background: var(--overlays-color);
+  padding: 188px 0;
+  align-items: center;
 }
 
 .main-title {
@@ -132,6 +165,10 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .button-order {
   cursor: pointer;
@@ -143,7 +180,13 @@ body {
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
-}
+  max-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  display: block;
+  border: none;
+  margin: 0 auto;
+  }
 
 .button-order:hover,
 .button-order:focus {
