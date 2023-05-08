@@ -26,7 +26,8 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-  
+}
+
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -180,13 +181,13 @@ body {
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   display: block;
   border: none;
   margin: 0 auto;
-  }
+}
 
 .button-order:hover,
 .button-order:focus {
@@ -195,8 +196,21 @@ body {
 }
 
 /* About styles */
+
+.about {
+  padding: 120px 0;
+  align-items: center;
+}
+
 .about-list {
   list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.about-link {
+  width: calc ((100%-72px)/4);
 }
 
 .link {
@@ -212,6 +226,7 @@ body {
   line-height: 1.2;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .body-text {
@@ -234,18 +249,7 @@ body {
   text-transform: none;
   text-align: center;
 }
-.doing {
-  color: var(--overlays-color);
-  font-size: 36px;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-decoration: none;
-  text-transform: capitalize;
-}
+
 .team-title {
   color: var(--overlays-color);
   font-family: "Roboto";
@@ -270,6 +274,7 @@ body {
 .team-list-card {
   background-color: var(--background-color);
 }
+
 .team-body-text {
   color: var(--body-text-color);
   font-size: 16px;
@@ -283,10 +288,46 @@ body {
 
 .team {
   background-color: var(--color-cloud);
+  padding: 120px 0;
+  align-items: center;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* Doing section */
+.doing {
+  padding: 120px 0;
+  align-items: center;
+}
+
+.doing-title {
+  color: var(--overlays-color);
+  font-size: 36px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  align-items: center;
 }
 .doing-list {
   list-style: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }
+
+.doing-link {
+  width: calc ((100%-72px)/3);
+}
+
+/* Our Team section */
+
 .team-list {
   list-style: none;
   background: var(--background-color);
