@@ -198,7 +198,7 @@ body {
 /* About styles */
 
 .about {
-  padding: 120px 0;
+  padding-top: 120px;
   align-items: center;
 }
 
@@ -297,8 +297,9 @@ body {
 }
 
 /* Doing section */
+
 .doing {
-  padding: 120px 0;
+  padding-top: 120px;
   align-items: center;
 }
 
@@ -337,7 +338,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 96px;
+  padding-top: 96px;
   gap: 24px;
 }
 .portfolio-list {
@@ -353,7 +354,7 @@ body {
 /* Main Portfolio */
 
 .project-cards {
-  margin: 0 auto;
+  margin: 72px auto 120px;
   width: 1158px;
 }
 
