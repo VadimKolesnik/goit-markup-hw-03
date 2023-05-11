@@ -411,7 +411,7 @@ body {
 /* Footer styles */
 .page-footer {
   background: var(--overlays-color);
-  padding-top: 100px;
+  padding: 100px;
 }
 .logo link {
   text-decoration: none;
