@@ -35,6 +35,12 @@ body {
   margin: 0 auto;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header styles */
 
 .header {
@@ -65,14 +71,14 @@ body {
   gap: 40px;
 }
 .header-nav-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 40px;
+  padding: 24px 0;
+  /* padding-bottom: 24px; */
+  /* margin-right: 40px; */
 }
 .contact-item {
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 /* .address-list {
   list-style: none;
@@ -95,6 +101,7 @@ body {
   list-style: none;
   color: var(--overlays-color);
   display: flex;
+  gap: 40px;
 }
 
 .address {
@@ -198,7 +205,7 @@ body {
 /* About styles */
 
 .about {
-  padding-top: 120px;
+  padding: 120px 0;
   align-items: center;
 }
 
@@ -210,7 +217,7 @@ body {
 }
 
 .about-link {
-  width: calc ((100%-72px)/4);
+  width: calc((100%-48px) / 4);
 }
 
 .link {
@@ -260,6 +267,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-header {
   color: var(--overlays-color);
@@ -273,6 +281,7 @@ body {
 }
 .team-list-card {
   background-color: var(--background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-body-text {
@@ -299,7 +308,7 @@ body {
 /* Doing section */
 
 .doing {
-  padding-top: 120px;
+  padding-bottom: 120px;
   align-items: center;
 }
 
@@ -315,6 +324,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   align-items: center;
+  margin-bottom: 72px;
 }
 .doing-list {
   list-style: none;
@@ -324,7 +334,7 @@ body {
 }
 
 .doing-link {
-  width: calc ((100%-72px)/3);
+  width: calc((100%-48px) / 3);
 }
 
 /* Our Team section */
@@ -352,6 +362,19 @@ body {
 }
 
 /* Main Portfolio */
+
+.filters {
+  padding: 96px 0 120px;
+}
+.button-list-filters {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 72px;
+  gap: 24px;
+}
 
 .project-cards {
   margin: 72px auto 120px;
@@ -396,6 +419,7 @@ body {
 .portfolio-project-content {
   padding: 32px 16px;
   border: 1px solid var(--subtle-background-color);
+  border: 1px solid transparent;
 }
 
 .about-header {
@@ -408,15 +432,26 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.02em;
 }
+
 /* Footer styles */
 .page-footer {
   background: var(--overlays-color);
-  padding: 100px;
+  padding: 100px 0;
 }
 .logo link {
   text-decoration: none;
   display: inline-block;
   margin-bottom: 16px;
+  color: var(--ctas-links-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .logo-footer {
   color: var(--color-cloud);
@@ -430,7 +465,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.logo {
+/* .logo {
   color: var(--ctas-links-color);
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -441,7 +476,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-}
+} */
 .footer-text {
   color: var(--color-cloud);
   font-family: "Roboto";
