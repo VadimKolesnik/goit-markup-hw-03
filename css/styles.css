@@ -78,11 +78,8 @@ img {
 .contact-item {
   padding-top: 24px;
   padding-bottom: 24px;
-  /* margin-right: 40px; */
 }
-/* .address-list {
-  list-style: none;
-} */
+
 .link {
   text-decoration: none;
 }
@@ -278,12 +275,16 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-list-card {
   background-color: var(--background-color);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-text {
+  padding: 32px 16px;
+}
 .team-body-text {
   color: var(--body-text-color);
   font-size: 16px;
@@ -341,7 +342,6 @@ img {
 
 .team-list {
   list-style: none;
-  background: var(--background-color);
 }
 .button-list {
   list-style: none;
@@ -351,6 +351,9 @@ img {
   padding-top: 96px;
   gap: 24px;
 }
+
+/* Main Portfolio */
+
 .portfolio-list {
   list-style: none;
   display: flex;
@@ -358,10 +361,9 @@ img {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 24px;
 }
-
-/* Main Portfolio */
 
 .filters {
   padding: 96px 0 120px;
@@ -409,11 +411,13 @@ img {
 .filter-button:focus {
   color: var(--background-color);
   background-color: var(--ctas-color);
+  border: 1px solid transparent;
 }
 
 .portfolio {
   list-style: none;
   text-decoration: none;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-project-content {
@@ -431,6 +435,7 @@ img {
   line-height: 1.2;
   text-transform: capitalize;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 /* Footer styles */
@@ -453,6 +458,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .logo-footer {
   color: var(--color-cloud);
   font-family: "Raleway", sans-serif;
@@ -465,18 +471,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* .logo {
-  color: var(--ctas-links-color);
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-decoration: none;
-} */
+
 .footer-text {
   color: var(--color-cloud);
   font-family: "Roboto";
