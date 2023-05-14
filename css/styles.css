@@ -200,10 +200,12 @@ img {
   display: flex;
   gap: 24px;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .about-link {
-  width: calc((100% - 72px)/4);
+  width: calc((100% - 72px) / 4);
 }
 
 .link {
@@ -230,6 +232,7 @@ img {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 .main-title {
   font-size: 56px;
@@ -254,6 +257,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
+  margin-top: 0;
 }
 .team-header {
   color: var(--overlays-color);
@@ -269,7 +273,7 @@ img {
 .team-list-card {
   background-color: var(--background-color);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px)/4);
+  width: calc((100% - 72px) / 4);
 }
 
 .team-text {
@@ -294,6 +298,8 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Doing section */
@@ -316,16 +322,19 @@ img {
   text-transform: capitalize;
   align-items: center;
   margin-bottom: 72px;
+  margin-top: 0;
 }
 .doing-list {
   list-style: none;
   display: flex;
   gap: 24px;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .doing-list-img {
-  width: calc((100%-48px)/3);
+  width: calc((100%-48px) / 3);
 }
 
 /* Our Team section */
@@ -366,6 +375,7 @@ img {
   flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 72px;
+  padding: 0;
   gap: 24px;
 }
 
@@ -403,7 +413,7 @@ img {
 .portfolio {
   list-style: none;
   text-decoration: none;
-  width: calc((100% - 48px)/3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-project-content {
